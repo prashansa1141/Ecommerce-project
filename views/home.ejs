@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to Home Page</h1>
+    <div class="container">
+      <h1>Add or Update Products</h1>
+      <input type="text" id="productName" placeholder="Product Name" />
+      <input
+        type="text"
+        id="productDescription"
+        placeholder="Product Description"
+      />
+      <input type="number" id="productPrice" placeholder="Product Price" />
+      <input type="file" id="productImage" accept="image/*" />
+      <button id="add-product-btn">Add Product</button>
+      <a href="/cart">
+        <button id="go-cart-btn">Cart</button>
+      </a>
+      <div id="product-list" class="product-list"></div>
+    </div>
+    <script src="add_product.js"></script>
+  </body>
+</html>
